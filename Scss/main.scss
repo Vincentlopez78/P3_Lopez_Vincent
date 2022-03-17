@@ -3,6 +3,20 @@
     display: flex;
     &__flexcentre {
         justify-content: center;
-        align-items: center;
+    }
+    &__flexbetween {
+        justify-content: space-between;
+    }
+    &__flexaround {
+        justify-content: space-around;
     }
 }    
+.align {
+    align-items: center;
+    &__flexstart {
+        align-items: flex-start;
+    }
+    &__center {
+        align-items: center;
+    }
+}
