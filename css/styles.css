@@ -1,0 +1,13 @@
+.display {
+  display: flex;
+}
+.display__flexcentre {
+  justify-content: center;
+  align-items: center;
+}
+.display__flexbetween {
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

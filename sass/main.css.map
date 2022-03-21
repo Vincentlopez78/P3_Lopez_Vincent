@@ -4,6 +4,6 @@
     "sources": [
         "main.scss"
     ],
-    "names": ["styles.css"],
-    "file": "styles.css"
+    "names": ["main.scss"],
+    "file": "main.scss"
 }
