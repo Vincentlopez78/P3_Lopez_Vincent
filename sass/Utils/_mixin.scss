@@ -15,14 +15,14 @@
 /* carte des restaurants d'acceuil */
 
 
-@mixin carteacceuil {
+@mixin carteresto {
     width: 90%;
     height: 250px;
     background-color: $white;
     @include margbot20;
     @include borderrad20;
 }
-@mixin carteacceuilimg {
+@mixin carterestoimg {
     object-fit: cover;
     width: 100%;
     height: 180px;
@@ -39,17 +39,28 @@
     background: linear-gradient(175deg, $secondaire, $primaire);
     border: none;
     box-shadow: 0 4px 16px -8px $black;
+    &:hover {
+        cursor: pointer;
+        box-shadow: none;
+    }
+
 }
 
 /* carte Fonctionnement */
 
 @mixin cartefonct {
-    width: 75%;
+    width: 100%;
     height: 70px;
     background-color: $griscarte;
     margin-bottom: 25px;
     @include borderrad20;
     justify-content: left;
     margin-left: 0;
-    
+    &:hover {
+        background-color: lighten($primaire, 35%);
+        cursor: pointer;
+        i::before {
+            color: $primaire;
+        }
+    }
 }

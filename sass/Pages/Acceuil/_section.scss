@@ -1,10 +1,15 @@
+.sectionfonct {
+    width: 70%;
+    height: auto;
+    margin-bottom: 35px;
+}
 .cartefonct {
     @include cartefonct;
     @include boxshadow;
     &__titresection {
         @include titreh2;
-        & h2 {
-            margin-left: 50px;
+        & p {
+            margin-left: -10px;
             margin-top: 20px;
             padding-top: 20px
         }
@@ -26,31 +31,38 @@
         @include borderrad20;
         align-items: center;
         &--icone {
-            padding-left: 9px;
-            padding-top: 12px;
+            padding-left: 8px;
+            margin-top: 4px;
         }
     }
 }
 
 .sectionresto {
-    width: 85%;
+    width: 80%;
     height: auto;
     background-color: $griscarte;
-    margin-left: 30px;
     padding-bottom: 40px;
+}
+.carteresto {
+    @include carteresto;
+    @include boxshadow;
+    & img {
+        @include carterestoimg;
+    }
     &__titresection {
         @include titreh2;
-        & h2 {
-            margin-left: 20px;
-            margin-top: 40px;
-            padding-top: 50px
+        & p {
+            padding-top: 50px;
+            margin-top: 0;
+            margin-left: 5%;
+            justify-content: left;
         }
     }
     &__carte {
-        @include carteacceuil;
+        @include carteresto;
         @include boxshadow;
         & img {
-            @include carteacceuilimg;
+            @include carterestoimg;
         }
         &--pos {
             height: 70px;
@@ -72,6 +84,10 @@
         &--icone {
         margin-right: 20px;
         margin-bottom: 10px;
+        :hover {
+            cursor: pointer;
+            background-image: linear-gradient(to right, $secondaire, $primaire);
+        }
         }
     }
 }
