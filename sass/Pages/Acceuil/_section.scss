@@ -1,0 +1,77 @@
+.cartefonct {
+    @include cartefonct;
+    @include boxshadow;
+    &__titresection {
+        @include titreh2;
+        & h2 {
+            margin-left: 50px;
+            margin-top: 20px;
+            padding-top: 20px
+        }
+    }
+    &__titrecarte {
+        @include titrecarte;
+    }
+    &__icone {
+        margin-right: 25px;
+        margin-left: 25px;
+        color: grey;
+    }
+    &__number {
+        width: 25px;
+        height: 25px;
+        background-color: $primaire;
+        color: $white;
+        margin-left: -10px;
+        @include borderrad20;
+        align-items: center;
+        &--icone {
+            padding-left: 9px;
+            padding-top: 12px;
+        }
+    }
+}
+
+.sectionresto {
+    width: 85%;
+    height: auto;
+    background-color: $griscarte;
+    margin-left: 30px;
+    padding-bottom: 40px;
+    &__titresection {
+        @include titreh2;
+        & h2 {
+            margin-left: 20px;
+            margin-top: 40px;
+            padding-top: 50px
+        }
+    }
+    &__carte {
+        @include carteacceuil;
+        @include boxshadow;
+        & img {
+            @include carteacceuilimg;
+        }
+        &--pos {
+            height: 70px;
+            margin-left: 15px;
+        }
+        &--titre {
+            @include titrecarte;
+        }
+        & h3 {
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        &--texte {
+            @include textecarte;
+        }
+        & p {
+            margin-top: 0;
+        }
+        &--icone {
+        margin-right: 20px;
+        margin-bottom: 10px;
+        }
+    }
+}

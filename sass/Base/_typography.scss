@@ -1,0 +1,49 @@
+@mixin titreh1 {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Bold.ttf);
+    font-weight: 900;
+    font-size: .8rem;
+}
+
+@mixin titreh2 {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Black.ttf);
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+@mixin textesearch {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Regular.ttf);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+@mixin texteheader {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+@mixin textebtn {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@mixin titrecarte {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Regular.ttf);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@mixin textecarte {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+

@@ -1,11 +1,15 @@
-.display {
-    display: flex;
-    &__flexcentre {
-        justify-content: center;
-        align-items: center;
-    }
-    &__flexbetween {
-        justify-content: center;
-        align-items: center;
-    }
+@import 'Utils/variables' ;
+@import 'Utils/mixin';
+@import 'Utils/listandmap' ;
+
+@import 'Base/typography' ;
+
+@import 'Layout/flexbox.scss' ;
+
+@import 'Pages/Acceuil/header' ;
+@import 'Pages/Acceuil/section' ;
+@import 'Pages/Acceuil/footer' ;
+
+* {
+    box-sizing: border-box;
 }

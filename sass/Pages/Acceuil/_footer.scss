@@ -1,0 +1,9 @@
+.footer {
+    width: 90%;
+    height: auto;
+    color: $white;
+    background-color: $black;
+    & img {
+        opacity: 1;
+    }
+}
