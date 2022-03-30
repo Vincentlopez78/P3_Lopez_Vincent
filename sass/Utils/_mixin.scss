@@ -69,3 +69,15 @@
         }
     }
 }
+
+/* carte Menu */
+
+@mixin cartemenu {
+    width: 90%;
+    height: 70px;
+    background-color: $white;
+    margin-bottom: 25px;
+    @include borderrad20;
+    justify-content: left;
+    margin-left: 0;
+}

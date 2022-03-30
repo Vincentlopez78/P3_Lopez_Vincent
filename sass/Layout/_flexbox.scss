@@ -17,4 +17,11 @@
             flex-direction: row;
         }
     }
+    &__flexaround {
+        justify-content: space-around;
+        align-items: center;
+        &--row {
+            flex-direction: row;
+        }
+    }
 }

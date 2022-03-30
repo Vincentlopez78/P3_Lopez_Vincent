@@ -1,0 +1,13 @@
+.sectionmenu {
+    width: 80%;
+    height: auto;
+    background-color: $griscarte;
+    border-radius: 35px 35px 0 0;
+    margin-top: -45px;
+}
+.carte {
+    @include cartemenu;
+    &__menu {
+        height: 70px;
+    }
+}

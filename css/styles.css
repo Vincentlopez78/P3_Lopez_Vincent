@@ -4,6 +4,7 @@
 /* carte des restaurants d'acceuil */
 /* bouton header */
 /* carte Fonctionnement */
+/* carte Menu */
 * {
   box-sizing: border-box;
 }
@@ -26,6 +27,13 @@
   flex-direction: column;
 }
 .display__flexbetween--row {
+  flex-direction: row;
+}
+.display__flexaround {
+  justify-content: space-around;
+  align-items: center;
+}
+.display__flexaround--row {
   flex-direction: row;
 }
 
@@ -296,7 +304,7 @@
 }
 
 #logo {
-  width: 95%;
+  width: 80%;
   padding-bottom: 5%;
 }
 
@@ -304,10 +312,40 @@
   width: 80%;
   height: auto;
 }
-.sectionheader__img {
-  object-fit: cover;
+
+.icone {
+  align-items: left;
+}
+
+.carteheader {
   width: 100%;
   height: 250px;
+}
+.carteheader img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.sectionmenu {
+  width: 80%;
+  height: auto;
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  margin-top: -45px;
+}
+
+.carte {
+  width: 90%;
+  height: 70px;
+  background-color: white;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  justify-content: left;
+  margin-left: 0;
+}
+.carte__menu {
+  height: 70px;
 }
 
 .footer {
