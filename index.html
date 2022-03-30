@@ -24,7 +24,7 @@
         <div class="display display__flexcentre display__flexcentre--colonne carteheader">
             <span class="carteheader__titre carteheader__titre--pos"><p>Réservez le menu qui vous convient</p></span>
             <span class="carteheader__texte carteheader__texte--pos"><p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p></span>
-            <button class="carteheader__btn carteheader__btn--pos" type="button">Explorer nos restaurants</button>
+            <button class="carteheader__btn carteheader__btn--pos" type="button" href="#restaurants">Explorer nos restaurants</button>
         </div>
     </header>
     <section class="display display__flexcentre display__flexcentre--colonne">
@@ -68,7 +68,7 @@
     <section class="display display__flexcentre display__flexcentre--colonne">
         <div class="sectionresto">
             <span class="carteresto__titresection"><p>Restaurants</p></span>
-            <div class="display display__flexcentre display__flexcentre--colonne">
+            <div id="restaurants" class="display display__flexcentre display__flexcentre--colonne">
                 <div class="carteresto carteresto__carte">
                     <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Jay">
                     <div class="display display__flexbetween display__flexbetween--row">
@@ -88,8 +88,8 @@
                             <span class="carteresto__carte--titre"><h3>La note enchantée</h3></span>
                             <span class="carteresto__carte--texte"><p>Charonne</p></span>
                         </div>
-                        <div class="carteresto__carte--icone fa-xl">
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="carteresto__carte--icone">
+                            <i class="fa-regular fa-heart fa-xl"></i>
                         </div>
                     </div>
                 </div>
@@ -100,8 +100,9 @@
                             <span class="carteresto__carte--titre"><h3>À la française</h3></span>
                             <span class="carteresto__carte--texte"><p>Cité Rouge</p></span>
                         </div>
-                        <div class="carteresto__carte--icone fa-xl">
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="carteresto__carte--icone">
+                            <span><i class="fa-regular fa-heart fa-xl"></i></span>
+                            <!--<span class="carteresto__carte--iconehover"><i class="fa-solid fa-heart fa-xl"></i></span>-->
                         </div>
                     </div>
                 </div>
@@ -112,8 +113,8 @@
                             <span class="carteresto__carte--titre"><h3>Le délice des sens</h3></span>
                             <span class="carteresto__carte--texte"><p>Folie-Méricourt</p></span>
                         </div>
-                        <div class="carteresto__carte--icone fa-xl">
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="carteresto__carte--icone">
+                            <i class="fa-regular fa-heart fa-xl"></i>
                         </div>
                     </div>
                 </div>

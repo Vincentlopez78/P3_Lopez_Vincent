@@ -4,6 +4,10 @@
 /* carte des restaurants d'acceuil */
 /* bouton header */
 /* carte Fonctionnement */
+* {
+  box-sizing: border-box;
+}
+
 .display {
   display: flex;
 }
@@ -34,6 +38,7 @@
   width: 80%;
   height: 50px;
   background-color: #eaeaea;
+  box-shadow: 0 3px 6px -6px black inset;
 }
 .formulaire__position {
   margin-left: 50px;
@@ -179,6 +184,7 @@
 }
 .carteresto img {
   object-fit: cover;
+  object-position: 50% 60%;
   width: 100%;
   height: 180px;
   border-radius: 20px 20px 0 0;
@@ -205,6 +211,7 @@
 }
 .carteresto__carte img {
   object-fit: cover;
+  object-position: 50% 60%;
   width: 100%;
   height: 180px;
   border-radius: 20px 20px 0 0;
@@ -236,9 +243,71 @@
   margin-right: 20px;
   margin-bottom: 10px;
 }
-.carteresto__carte--icone :hover {
+
+.footer {
+  width: 80%;
+  height: auto;
+  color: white;
+  background-color: black;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.footer__logo {
+  font-family: shrikhand;
+  src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+  font-size: 1rem;
+  color: white;
+}
+.footer__icone {
+  justify-content: left;
+}
+.footer__icone p {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.footer__icone p:hover {
   cursor: pointer;
-  background-image: linear-gradient(to right, #FF79DA, #9356DC);
+  text-decoration: underline;
+}
+.footer__icone--posfork {
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+.footer__icone--poshand {
+  padding-right: 12px;
+  margin-bottom: 10px;
+}
+.footer__pasgras {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 300;
+  font-size: 1rem;
+}
+.footer__pasgras p {
+  margin: 0 0 10px 0;
+}
+.footer__pasgras p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#logo {
+  width: 95%;
+  padding-bottom: 5%;
+}
+
+.sectionheader {
+  width: 80%;
+  height: auto;
+}
+.sectionheader__img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
 }
 
 .footer {
@@ -266,6 +335,10 @@
   margin-top: 0;
   margin-bottom: 10px;
 }
+.footer__icone p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .footer__icone--posfork {
   padding-right: 15px;
   margin-bottom: 10px;
@@ -283,9 +356,9 @@
 .footer__pasgras p {
   margin: 0 0 10px 0;
 }
-
-* {
-  box-sizing: border-box;
+.footer__pasgras p:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */

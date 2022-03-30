@@ -1,7 +1,7 @@
 .sectionfonct {
     width: 70%;
     height: auto;
-    margin-bottom: 35px;
+    margin-bottom: $margbot*3.5;
 }
 .cartefonct {
     @include cartefonct;
@@ -84,10 +84,6 @@
         &--icone {
         margin-right: 20px;
         margin-bottom: 10px;
-        :hover {
-            cursor: pointer;
-            background-image: linear-gradient(to right, $secondaire, $primaire);
-        }
+            }
         }
     }
-}

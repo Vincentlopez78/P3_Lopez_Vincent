@@ -5,20 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
         <link rel="stylesheet" href="./css/styles.css">
         <title>La palette du goût</title>
     </head>
     <body>
-        <header>
-            <div>
-                <img src="./P3_Documents/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo">
-                <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div>
-                <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay">
+        <header class="display display__flexcentre display__flexcentre--colonne">
+            <div class="sectionheader">
+                <div class="display display__flexcentre display--row">
+                    <div>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="display display__flexcentre">
+                        <img src="./P3_Documents/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo">
+                    </div>
+                </div>
+                <div class="sectionheader__img">
+                    <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay">
+                </div>
             </div>
         </header>
-        <section>
+        <section class="display display__flexcentre display__flexcentre--colonne">
             <div>
                 <h1>La palette du goût</h1>
                 <i class="fa-regular fa-heart"></i>
@@ -99,21 +107,21 @@
                 <button type="button">Commander</button>
             </div>
         </section>
-        <footer>
-            <div>
-                <div>
-                    <img src="./P3_Documents/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logofooter">
-                </div>
-                <div>
-                    <i class="fa-solid fa-utensils"></i>
+        <footer class="display display__flexcentre">
+            <div class="footer display display__flexcentre--colonne">
+                <span class="footer__logo"><h2>ohmyfood</h2></span>
+                <div class="display display__flexcentre display__flexcentre--row footer__icone">
+                    <i class="fa-solid fa-utensils footer__icone--posfork"></i>
                     <p>Proposer un restaurant</p>
                 </div>
-                <div>
-                    <i class="fa-solid fa-handshake-angle"></i>
+                <div class="display display__flexcentre display__flexcentre--row footer__icone">
+                    <i class="fa-solid fa-handshake-angle fa-sm footer__icone--poshand"></i>
                     <p>Devenir partenaire</p>
                 </div>
-                <span>Mentions légales</span>
-                <span>Contact</span>
+                <div class="footer__pasgras">
+                    <p>Mentions légales</p>
+                    <p>Contact</p>
+                </div>
             </div>
         </footer>
     </body>

@@ -3,6 +3,7 @@
 @import 'Utils/listandmap' ;
 
 @import 'Base/typography' ;
+@import 'Base/boxsize' ;
 
 @import 'Layout/flexbox.scss' ;
 
@@ -10,6 +11,6 @@
 @import 'Pages/Acceuil/section' ;
 @import 'Pages/Acceuil/footer' ;
 
-* {
-    box-sizing: border-box;
-}
+@import 'Pages/Restaurants/header' ;
+@import 'Pages/Restaurants/section' ;
+@import 'Pages/Restaurants/footer' ;
