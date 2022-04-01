@@ -90,10 +90,10 @@
   text-align: center;
 }
 .carteheader__texte--pos {
-  padding: 0 30px 20px 30px;
+  padding: 0 30px 10px 30px;
 }
 .carteheader p {
-  margin-top: 0;
+  margin: 0;
 }
 .carteheader__btn {
   width: 60%;
@@ -113,7 +113,7 @@
   box-shadow: none;
 }
 .carteheader__btn--pos {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .sectionfonct {
@@ -188,6 +188,7 @@
   background-color: white;
   margin-bottom: 20px;
   border-radius: 20px;
+  text-decoration: none;
   box-shadow: 2px 3px 16px -12px black;
 }
 .carteresto img {
@@ -215,6 +216,7 @@
   background-color: white;
   margin-bottom: 20px;
   border-radius: 20px;
+  text-decoration: none;
   box-shadow: 2px 3px 16px -12px black;
 }
 .carteresto__carte img {
@@ -250,6 +252,9 @@
 .carteresto__carte--icone {
   margin-right: 20px;
   margin-bottom: 10px;
+}
+.carteresto:hover {
+  cursor: pointer;
 }
 
 .footer {
@@ -309,63 +314,125 @@
 }
 
 .sectionheader {
-  width: 80%;
+  width: 90%;
   height: auto;
 }
-
-.icone {
-  align-items: left;
-}
-
-.carteheader {
+.sectionheader .carteheader {
   width: 100%;
   height: 250px;
 }
-.carteheader img {
+.sectionheader .carteheader img {
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
 
+.icone {
+  padding-top: 15px;
+  color: black;
+}
+.icone:hover {
+  cursor: pointer;
+}
+
 .sectionmenu {
-  width: 80%;
+  width: 90%;
   height: auto;
   background-color: #f6f6f6;
   border-radius: 35px 35px 0 0;
-  margin-top: -45px;
+  margin-top: -35px;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+.sectionmenu h1 {
+  font-family: shrikhand;
+  src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+  font-size: 1.7rem;
+}
+.sectionmenu i {
+  padding-right: 20px;
 }
 
 .carte {
-  width: 90%;
-  height: 70px;
+  width: 94%;
+  min-height: 70px;
   background-color: white;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   border-radius: 20px;
   justify-content: left;
   margin-left: 0;
 }
+.carte h3 {
+  margin-top: 12px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.carte p {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.carte__titre {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.carte__titre p {
+  margin-left: 5%;
+}
+.carte__titre--border {
+  border-bottom: 3px solid #99E2D0;
+}
 .carte__menu {
   height: 70px;
 }
+.carte__menu h3 {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Regular.ttf);
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.carte__menu p {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.carte__menu--prix {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Regular.ttf);
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  margin-top: 25px;
+}
 
-.footer {
-  width: 80%;
+.carteheader__btn {
+  margin-top: 30px;
+}
+
+a {
+  display: block;
+}
+
+.footerpage {
+  width: 90%;
   height: auto;
   color: white;
   background-color: black;
   padding-bottom: 30px;
   padding-left: 20px;
 }
-.footer__logo {
+.footerpage__logo {
   font-family: shrikhand;
   src: url(/police/shrikhand/Shrikhand-Regular.ttf);
   font-size: 1rem;
   color: white;
 }
-.footer__icone {
+.footerpage__icone {
   justify-content: left;
 }
-.footer__icone p {
+.footerpage__icone p {
   font-family: Roboto;
   src: url(/police/roboto/Roboto-Light.ttf);
   font-weight: 500;
@@ -373,28 +440,28 @@
   margin-top: 0;
   margin-bottom: 10px;
 }
-.footer__icone p:hover {
+.footerpage__icone p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-.footer__icone--posfork {
+.footerpage__icone--posfork {
   padding-right: 15px;
   margin-bottom: 10px;
 }
-.footer__icone--poshand {
+.footerpage__icone--poshand {
   padding-right: 12px;
   margin-bottom: 10px;
 }
-.footer__pasgras {
+.footerpage__pasgras {
   font-family: Roboto;
   src: url(/police/roboto/Roboto-Light.ttf);
   font-weight: 300;
   font-size: 1rem;
 }
-.footer__pasgras p {
+.footerpage__pasgras p {
   margin: 0 0 10px 0;
 }
-.footer__pasgras p:hover {
+.footerpage__pasgras p:hover {
   cursor: pointer;
   text-decoration: underline;
 }

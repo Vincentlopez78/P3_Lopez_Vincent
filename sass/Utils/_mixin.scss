@@ -25,6 +25,7 @@
     background-color: $white;
     @include margbot20;
     @include borderrad20;
+    text-decoration: none;
 }
 @mixin carterestoimg {
     object-fit: cover;
@@ -73,11 +74,20 @@
 /* carte Menu */
 
 @mixin cartemenu {
-    width: 90%;
-    height: 70px;
+    width: 94%;
+    min-height: 70px;
     background-color: $white;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     @include borderrad20;
     justify-content: left;
     margin-left: 0;
+    & h3 {
+        margin-top: 12px;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+    & p {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
 }

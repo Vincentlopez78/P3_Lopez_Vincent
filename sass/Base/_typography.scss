@@ -4,6 +4,12 @@
     font-size: 1rem;
 }
 
+@mixin shrikmenu {
+    font-family: shrikhand;
+    src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+    font-size: 1.7rem;
+}
+
 @mixin titreh1 {
     font-family: Roboto;
     src: url(/police/roboto/Roboto-MediumItalic.ttf);
@@ -51,6 +57,27 @@
     src: url(/police/roboto/Roboto-Light.ttf);
     font-weight: 400;
     font-size: 1.1rem;
+}
+
+@mixin titremenusection {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+@mixin titremenu {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Regular.ttf);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+@mixin textemenu {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 @mixin textefootergras {

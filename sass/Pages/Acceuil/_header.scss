@@ -38,17 +38,17 @@
         @include texteheader;
         text-align: center;
         &--pos {
-            padding: 0 30px 20px 30px;
+            padding: 0 30px 10px 30px;
         }
     }
     & p {
-        margin-top: 0;
+        margin: 0;
         }
     &__btn {
         @include btnheader;
         @include textebtn;
         &--pos {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
     }
 }
