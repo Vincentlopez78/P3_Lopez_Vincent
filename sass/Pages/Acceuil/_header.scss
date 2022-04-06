@@ -1,0 +1,54 @@
+#logo {
+    width: 95%;
+    padding-bottom: 5%;
+}
+.formulaire {
+    width: 80%;
+    height: 50px;
+    background-color: $grissearch;
+    @include boxshadowtop;
+    &__position {
+        margin-left: 50px;
+    }
+    &__searchbar {
+        background-color: $grissearch;
+        border: none;
+        outline-style: none;
+        @include textesearch;
+        &--pos {
+            margin-top: 13px;
+            padding-left: 15px;
+        }
+    }
+}
+.carteheader {
+    width: 80%;
+    height: 300px;
+    background-color: $griscarte;
+    &__titre {
+        @include titreh1;
+        text-align: center;
+        &--pos {
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-top: 35px
+        }
+    }
+    &__texte {
+        @include texteheader;
+        text-align: center;
+        &--pos {
+            padding: 0 30px 10px 30px;
+        }
+    }
+    & p {
+        margin: 0;
+        }
+    &__btn {
+        @include btnheader;
+        @include textebtn;
+        &--pos {
+            margin-bottom: 30px;
+        }
+    }
+}

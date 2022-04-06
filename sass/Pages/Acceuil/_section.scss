@@ -1,0 +1,92 @@
+.sectionfonct {
+    width: 70%;
+    height: auto;
+    margin-bottom: $margbot*3.5;
+}
+.cartefonct {
+    @include cartefonct;
+    @include boxshadow;
+    &__titresection {
+        @include titreh2;
+        & p {
+            margin-left: -10px;
+            margin-top: 20px;
+            padding-top: 20px
+        }
+    }
+    &__titrecarte {
+        @include titrecarte;
+    }
+    &__icone {
+        margin-right: 25px;
+        margin-left: 25px;
+        color: grey;
+    }
+    &__number {
+        width: 25px;
+        height: 25px;
+        background-color: $primaire;
+        color: $white;
+        margin-left: -10px;
+        @include borderrad20;
+        align-items: center;
+        &--icone {
+            padding-left: 8px;
+            margin-top: 4px;
+        }
+    }
+}
+
+.sectionresto {
+    width: 80%;
+    height: auto;
+    background-color: $griscarte;
+    padding-bottom: 40px;
+}
+.carteresto {
+    @include carteresto;
+    @include boxshadow;
+    & img {
+        @include carterestoimg;
+    }
+    &__titresection {
+        @include titreh2;
+        & p {
+            padding-top: 50px;
+            margin-top: 0;
+            margin-left: 5%;
+            justify-content: left;
+        }
+    }
+    &__carte {
+        @include carteresto;
+        @include boxshadow;
+        & img {
+            @include carterestoimg;
+        }
+        &--pos {
+            height: 70px;
+            margin-left: 15px;
+        }
+        &--titre {
+            @include titrecarte;
+        }
+        & h3 {
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        &--texte {
+            @include textecarte;
+        }
+        & p {
+            margin-top: 0;
+        }
+        &--icone {
+        margin-right: 20px;
+        margin-bottom: 10px;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        }
+    }

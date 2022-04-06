@@ -1,0 +1,96 @@
+@mixin shrik {
+    font-family: shrikhand;
+    src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+    font-size: 1rem;
+}
+
+@mixin shrikmenu {
+    font-family: shrikhand;
+    src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+    font-size: 1.7rem;
+}
+
+@mixin titreh1 {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-MediumItalic.ttf);
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+@mixin titreh2 {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Bold.ttf);
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+@mixin textesearch {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Regular.ttf);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+@mixin texteheader {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+@mixin textebtn {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@mixin titrecarte {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Regular.ttf);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@mixin textecarte {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+@mixin titremenusection {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+@mixin titremenu {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Regular.ttf);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+@mixin textemenu {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@mixin textefootergras {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+@mixin textefooternogras {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Light.ttf);
+    font-weight: 300;
+    font-size: 1rem;
+}
+

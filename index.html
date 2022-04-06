@@ -5,132 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Ohmyfood</title>
 </head>
 <body>
-    <header>
-        <span><img src="./P3_Documents/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo"></span>
-        <form>
-            <div>
+    <header class="display display__flexcentre display__flexcentre--colonne">
+        <span><img id="logo" src="./P3_Documents/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo"></span>
+        <form class="formulaire">
+            <div class="display display__flexcentre formulaire__position">
                 <label for="search">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" id="search" value="Paris, Belleville">
+                    <i class="fa-solid fa-location-dot" id="search"></i>
+                    <input class="formulaire__searchbar formulaire__searchbar--pos" type="text" id="search" value="Paris, Belleville">
                 </label>
             </div>
         </form>
-        <div>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
-            <button type="button">Explorer nos restaurants</button>
+        <div class="display display__flexcentre display__flexcentre--colonne carteheader">
+            <span class="carteheader__titre carteheader__titre--pos"><p>Réservez le menu qui vous convient</p></span>
+            <span class="carteheader__texte carteheader__texte--pos"><p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p></span>
+            <button class="carteheader__btn carteheader__btn--pos" type="button" href="#restaurants">Explorer nos restaurants</button>
         </div>
     </header>
-    <section>
-        <span><h2>Fontionnement</h2></span>
-        <div">
-            <div>
-                <div>
-                    <p>1</p>
+    <section class="display display__flexcentre display__flexcentre--colonne">
+        <div class="sectionfonct">
+            <span class="cartefonct__titresection"><p>Fonctionnement</p></span>
+            <div class="display display__flexcentre display__flexcentre--row cartefonct cartefonct__icone:hover">
+                <div class="cartefonct__number">
+                    <p class="cartefonct__number--icone">1</p>
                 </div>
-                <div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+                <div class="cartefonct__icone">
+                    <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
                 </div>
-                <div>
+                <div class="cartefonct__titrecarte">
                     <p>Choisissez un restaurant</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p>2</p>
+            <div class="display display__flexcentre display__flexcentre--row cartefonct">
+                <div class="cartefonct__number">
+                    <p class="cartefonct__number--icone">2</p>
                 </div>
-                <div>
-                    <i class="fa-solid fa-list-ul"></i>
+                <div class="cartefonct__icone">
+                    <i class="fa-solid fa-list-ul fa-lg"></i>
                 </div>
-                <div>
+                <div class="cartefonct__titrecarte">
                     <p>Composez votre menu</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p>3</p>
+            <div class="display display__flexcentre display__flexcentre--row cartefonct">
+                <div class="cartefonct__number">
+                    <p class="cartefonct__number--icone">3</p>
                 </div>
-                <div>
-                    <i class="fa-solid fa-store"></i>
+                <div class="cartefonct__icone">
+                    <i class="fa-solid fa-store fa-lg"></i>
                 </div>
-                <div>
+                <div class="cartefonct__titrecarte">
                     <p>Dégustez au restaurant</p>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <span><h2>Restaurants</h2></span>
-        <div>
-            <div>
-                <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Jay">
-                <div">
-                    <div>
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
+    <section class="display display__flexcentre display__flexcentre--colonne">
+        <div class="sectionresto">
+            <span class="carteresto__titresection"><p>Restaurants</p></span>
+            <div id="restaurants" class="display display__flexcentre display__flexcentre--colonne">
+                <a href="pagepalette.html" class="carteresto carteresto__carte">
+                    <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Jay">
+                    <div class="display display__flexbetween display__flexbetween--row">
+                        <div class="carteresto__carte--pos">
+                            <span class="carteresto__carte--titre"><h3>La palette du goût</h3></span>
+                            <span class="carteresto__carte--texte"><p>Ménilmontant</p></span>
+                        </div>
+                        <div class="carteresto__carte--icone">
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="pagenote.html" class="carteresto carteresto__carte">
+                    <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="stil">
+                    <div class="display display__flexbetween display__flexbetween--row">
+                        <div class="carteresto__carte--pos">
+                            <span class="carteresto__carte--titre"><h3>La note enchantée</h3></span>
+                            <span class="carteresto__carte--texte"><p>Charonne</p></span>
+                        </div>
+                        <div class="carteresto__carte--icone">
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="stil">
-                <div>
-                    <div>
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                </a>
+                <a href="pagefrancaise.html" class="carteresto carteresto__carte">
+                    <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa">
+                    <div class="display display__flexbetween display__flexbetween--row">
+                        <div class="carteresto__carte--pos">
+                            <span class="carteresto__carte--titre"><h3>À la française</h3></span>
+                            <span class="carteresto__carte--texte"><p>Cité Rouge</p></span>
+                        </div>
+                        <div class="carteresto__carte--icone">
+                            <span><i class="fa-regular fa-heart fa-xl"></i></span>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="pagedelice.html" class="carteresto carteresto__carte">
+                    <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis">
+                    <div class="display display__flexbetween display__flexbetween--row">
+                        <div class="carteresto__carte--pos">
+                            <span class="carteresto__carte--titre"><h3>Le délice des sens</h3></span>
+                            <span class="carteresto__carte--texte"><p>Folie-Méricourt</p></span>
+                        </div>
+                        <div class="carteresto__carte--icone">
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa">
-                <div>
-                    <div>
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
-                    </div>
-                    <div>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img src="./P3_Documents/Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis">
-                <div>
-                    <div>
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                    <div>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
-    <footer>
-        <div>
-            <div>
-                <img src="./P3_Documents/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logofooter">
-            </div>
-            <div>
-                <i class="fa-solid fa-utensils"></i>
+    <footer class="display display__flexcentre">
+        <div class="footer display display__flexcentre--colonne">
+            <span class="footer__logo"><h2>ohmyfood</h2></span>
+            <div class="display display__flexcentre display__flexcentre--row footer__icone">
+                <i class="fa-solid fa-utensils footer__icone--posfork"></i>
                 <p>Proposer un restaurant</p>
             </div>
-            <div>
-                <i class="fa-solid fa-handshake-angle"></i>
+            <div class="display display__flexcentre display__flexcentre--row footer__icone">
+                <i class="fa-solid fa-handshake-angle fa-sm footer__icone--poshand"></i>
                 <p>Devenir partenaire</p>
             </div>
-            <span>Mentions légales</span>
-            <span>Contact</span>
+            <div class="footer__pasgras">
+                <p>Mentions légales</p>
+                <p>Contact</p>
+            </div>
         </div>
     </footer>
 </body>

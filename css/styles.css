@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/* Couleur */
+/* Général */
+/* carte des restaurants d'acceuil */
+/* bouton header */
+/* carte Fonctionnement */
+/* carte Menu */
+* {
+  box-sizing: border-box;
+}
+
+.display {
+  display: flex;
+}
+.display__flexcentre {
+  justify-content: center;
+  align-items: center;
+}
+.display__flexcentre--colonne {
+  flex-direction: column;
+}
+.display__flexbetween {
+  justify-content: space-between;
+  align-items: center;
+}
+.display__flexbetween--colonne {
+  flex-direction: column;
+}
+.display__flexbetween--row {
+  flex-direction: row;
+}
+.display__flexaround {
+  justify-content: space-around;
+  align-items: center;
+}
+.display__flexaround--row {
+  flex-direction: row;
+}
+
+#logo {
+  width: 95%;
+  padding-bottom: 5%;
+}
+
+.formulaire {
+  width: 80%;
+  height: 50px;
+  background-color: #eaeaea;
+  box-shadow: 0 3px 6px -6px black inset;
+}
+.formulaire__position {
+  margin-left: 50px;
+}
+.formulaire__searchbar {
+  background-color: #eaeaea;
+  border: none;
+  outline-style: none;
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Regular.ttf);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.formulaire__searchbar--pos {
+  margin-top: 13px;
+  padding-left: 15px;
+}
+
+.carteheader {
+  width: 80%;
+  height: 300px;
+  background-color: #f6f6f6;
+}
+.carteheader__titre {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-MediumItalic.ttf);
+  font-weight: 900;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.carteheader__titre--pos {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 35px;
+}
+.carteheader__texte {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.carteheader__texte--pos {
+  padding: 0 30px 10px 30px;
+}
+.carteheader p {
+  margin: 0;
+}
+.carteheader__btn {
+  width: 60%;
+  height: 50px;
+  color: white;
+  border-radius: 25px;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border: none;
+  box-shadow: 0 4px 16px -8px black;
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.carteheader__btn:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+.carteheader__btn--pos {
+  margin-bottom: 30px;
+}
+
+.sectionfonct {
+  width: 70%;
+  height: auto;
+  margin-bottom: 35px;
+}
+
+.cartefonct {
+  width: 100%;
+  height: 70px;
+  background-color: #f6f6f6;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  justify-content: left;
+  margin-left: 0;
+  box-shadow: 2px 3px 16px -12px black;
+}
+.cartefonct:hover {
+  background-color: #f2eafb;
+  cursor: pointer;
+}
+.cartefonct:hover i::before {
+  color: #9356DC;
+}
+.cartefonct__titresection {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Bold.ttf);
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.cartefonct__titresection p {
+  margin-left: -10px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.cartefonct__titrecarte {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Regular.ttf);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.cartefonct__icone {
+  margin-right: 25px;
+  margin-left: 25px;
+  color: grey;
+}
+.cartefonct__number {
+  width: 25px;
+  height: 25px;
+  background-color: #9356DC;
+  color: white;
+  margin-left: -10px;
+  border-radius: 20px;
+  align-items: center;
+}
+.cartefonct__number--icone {
+  padding-left: 8px;
+  margin-top: 4px;
+}
+
+.sectionresto {
+  width: 80%;
+  height: auto;
+  background-color: #f6f6f6;
+  padding-bottom: 40px;
+}
+
+.carteresto {
+  width: 90%;
+  height: 250px;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 2px 3px 16px -12px black;
+}
+.carteresto img {
+  object-fit: cover;
+  object-position: 50% 60%;
+  width: 100%;
+  height: 180px;
+  border-radius: 20px 20px 0 0;
+}
+.carteresto__titresection {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Bold.ttf);
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.carteresto__titresection p {
+  padding-top: 50px;
+  margin-top: 0;
+  margin-left: 5%;
+  justify-content: left;
+}
+.carteresto__carte {
+  width: 90%;
+  height: 250px;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 2px 3px 16px -12px black;
+}
+.carteresto__carte img {
+  object-fit: cover;
+  object-position: 50% 60%;
+  width: 100%;
+  height: 180px;
+  border-radius: 20px 20px 0 0;
+}
+.carteresto__carte--pos {
+  height: 70px;
+  margin-left: 15px;
+}
+.carteresto__carte--titre {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Regular.ttf);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.carteresto__carte h3 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.carteresto__carte--texte {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.carteresto__carte p {
+  margin-top: 0;
+}
+.carteresto__carte--icone {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.carteresto:hover {
+  cursor: pointer;
+}
+
+.footer {
+  width: 80%;
+  height: auto;
+  color: white;
+  background-color: black;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.footer__logo {
+  font-family: shrikhand;
+  src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+  font-size: 1rem;
+  color: white;
+}
+.footer__icone {
+  justify-content: left;
+}
+.footer__icone p {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.footer__icone p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer__icone--posfork {
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+.footer__icone--poshand {
+  padding-right: 12px;
+  margin-bottom: 10px;
+}
+.footer__pasgras {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 300;
+  font-size: 1rem;
+}
+.footer__pasgras p {
+  margin: 0 0 10px 0;
+}
+.footer__pasgras p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#logo {
+  width: 80%;
+  padding-bottom: 5%;
+}
+
+.sectionheader {
+  width: 90%;
+  height: auto;
+}
+.sectionheader .carteheader {
+  width: 100%;
+  height: 250px;
+}
+.sectionheader .carteheader img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.icone {
+  padding-top: 15px;
+  color: black;
+}
+.icone:hover {
+  cursor: pointer;
+}
+
+.sectionmenu {
+  width: 90%;
+  height: auto;
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  margin-top: -35px;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+.sectionmenu h1 {
+  font-family: shrikhand;
+  src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+  font-size: 1.7rem;
+}
+.sectionmenu i {
+  padding-right: 20px;
+}
+
+.carte {
+  width: 94%;
+  min-height: 70px;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  justify-content: left;
+  margin-left: 0;
+}
+.carte h3 {
+  margin-top: 12px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.carte p {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.carte__titre {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.carte__titre p {
+  margin-left: 5%;
+}
+.carte__titre--border {
+  border-bottom: 3px solid #99E2D0;
+}
+.carte__menu {
+  height: 70px;
+}
+.carte__menu h3 {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Regular.ttf);
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.carte__menu p {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.carte__menu--prix {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Regular.ttf);
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+
+.carteheader__btn {
+  margin-top: 30px;
+}
+
+a {
+  display: block;
+}
+
+.footerpage {
+  width: 90%;
+  height: auto;
+  color: white;
+  background-color: black;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.footerpage__logo {
+  font-family: shrikhand;
+  src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+  font-size: 1rem;
+  color: white;
+}
+.footerpage__icone {
+  justify-content: left;
+}
+.footerpage__icone p {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.footerpage__icone p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footerpage__icone--posfork {
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+.footerpage__icone--poshand {
+  padding-right: 12px;
+  margin-bottom: 10px;
+}
+.footerpage__pasgras {
+  font-family: Roboto;
+  src: url(/police/roboto/Roboto-Light.ttf);
+  font-weight: 300;
+  font-size: 1rem;
+}
+.footerpage__pasgras p {
+  margin: 0 0 10px 0;
+}
+.footerpage__pasgras p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */

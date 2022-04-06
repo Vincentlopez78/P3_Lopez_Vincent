@@ -1,0 +1,25 @@
+#logo {
+    width: 80%;
+    padding-bottom: 5%;
+}
+.sectionheader {
+    width: 90%;
+    height: auto;
+    & .carteheader {
+        width: 100%;
+        height: 250px;
+        & img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    }
+}
+.icone {
+    padding-top: 15px;
+    color: $black;
+    &:hover {
+        cursor: pointer;
+
+    }
+}
