@@ -4,6 +4,12 @@
     font-size: 1rem;
 }
 
+@mixin shriktete {
+    font-family: shrikhand;
+    src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+    font-size: 1.6rem;
+}
+
 @mixin shrikmenu {
     font-family: shrikhand;
     src: url(/police/shrikhand/Shrikhand-Regular.ttf);

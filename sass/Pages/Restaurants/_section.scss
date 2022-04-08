@@ -19,6 +19,15 @@
         @include titremenusection;
         & p {
         margin-left: 5%;
+        &::after {
+            content: "";
+            width: $width*4.5;
+            height: $height*0.3;
+            background-color: $tertiaire;
+            position: absolute;
+            left: 3rem;
+            margin-top: $marg*2.8;
+            }
         }
         &--border {
             border-bottom: 3px solid $tertiaire;
@@ -43,17 +52,18 @@
             padding-right: $pad*9;
         }
     }
-    &__check {
+        &__check {
         background-color: $tertiaire;
         min-width: $width*6;
         height: $height*7;
         margin: $marg*-6;
-        border-radius: 0 20px 20px 0;
         transition-duration: .6s;
     }
+    
     &:hover &__check {
         margin-right: 0;
     }
+    
     &__anime {
         height: $height*2.5;
         width: $width*2.5;
@@ -63,6 +73,7 @@
         transform: rotate(-360deg);
         transition-duration: .6s;
     }
+    
     &:hover &__anime {
         transform: rotate(0);
     }
@@ -75,6 +86,7 @@
 .carteheader__btn {
     margin-top: $marg*3;
 }
+
 a {
     display: block;
 }

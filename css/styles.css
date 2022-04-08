@@ -345,9 +345,11 @@ a {
   text-decoration: underline;
 }
 
-#logo {
-  width: 80%;
-  padding-bottom: 5%;
+#entete {
+  font-family: shrikhand;
+  src: url(/police/shrikhand/Shrikhand-Regular.ttf);
+  font-size: 1.6rem;
+  margin: 0;
 }
 
 .sectionheader {
@@ -366,7 +368,7 @@ a {
 
 .icone i {
   position: relative;
-  right: 80px;
+  right: 90px;
   color: black;
 }
 .icone i:hover {
@@ -423,6 +425,15 @@ a {
 .carte__titre p {
   margin-left: 5%;
 }
+.carte__titre p::after {
+  content: "";
+  width: 45px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 3rem;
+  margin-top: 28px;
+}
 .carte__titre--border {
   border-bottom: 3px solid #99E2D0;
 }
@@ -459,7 +470,6 @@ a {
   min-width: 60px;
   height: 70px;
   margin: -60px;
-  border-radius: 0 20px 20px 0;
   transition-duration: 0.6s;
 }
 .carte:hover .carte__check {
