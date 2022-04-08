@@ -60,7 +60,7 @@
         background-color: $white;
         padding-left: $pad*2;
         @include borderrad20;
-        transform: rotate(180deg);
+        transform: rotate(-360deg);
         transition-duration: .6s;
     }
     &:hover &__anime {

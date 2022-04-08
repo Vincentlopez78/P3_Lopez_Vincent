@@ -471,7 +471,7 @@ a {
   background-color: white;
   padding-left: 20px;
   border-radius: 20px;
-  transform: rotate(180deg);
+  transform: rotate(-360deg);
   transition-duration: 0.6s;
 }
 .carte:hover .carte__anime {
