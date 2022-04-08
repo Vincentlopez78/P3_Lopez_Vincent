@@ -3,14 +3,14 @@
     height: auto;
     background-color: $griscarte;
     border-radius: 35px 35px 0 0;
-    margin-top: -35px;
-    padding-top: 15px;
-    padding-bottom: 60px;
+    margin-top: $marg*-3.5;
+    padding-top: $pad*1.5;
+    padding-bottom: $pad*6;
     & h1 {
         @include shrikmenu;
     }
     & i {
-        padding-right: 20px;
+        padding-right: $pad*2;
     }
 }
 .carte {
@@ -25,7 +25,7 @@
         }
     }
     &__menu {
-        height: 70px;
+        height: $height*7;
         flex: 1;
         overflow: hidden;
         text-overflow: clip '...';
@@ -38,16 +38,16 @@
         }
         &--prix {
             @include titremenu;
-            margin-top: 25px;
-            margin-left: 10px;
-            padding-right: 90px;
+            margin-top: $marg*2.5;
+            margin-left: $marg;
+            padding-right: $pad*9;
         }
     }
     &__check {
         background-color: $tertiaire;
-        min-width: 60px;
-        height: 70px;
-        margin: -60px;
+        min-width: $width*6;
+        height: $height*7;
+        margin: $marg*-6;
         border-radius: 0 20px 20px 0;
         transition-duration: .6s;
     }
@@ -55,10 +55,10 @@
         margin-right: 0;
     }
     &__anime {
-        height: 25px;
-        width: 25px;
+        height: $height*2.5;
+        width: $width*2.5;
         background-color: $white;
-        padding-left: 20px;
+        padding-left: $pad*2;
         @include borderrad20;
         transform: rotate(180deg);
         transition-duration: .6s;
@@ -71,8 +71,9 @@
         color: $tertiaire;
     }
 }
+
 .carteheader__btn {
-    margin-top: 30px;
+    margin-top: $marg*3;
 }
 a {
     display: block;

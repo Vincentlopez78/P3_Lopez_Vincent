@@ -5,7 +5,7 @@
 }
 
 @mixin margbot20 {
-    margin-bottom: 20px;
+    margin-bottom: $marg*2;
 }
 
 @mixin boxshadow {
@@ -21,7 +21,7 @@
 
 @mixin carteresto {
     width: 90%;
-    height: 250px;
+    height: $height*25;
     background-color: $white;
     @include margbot20;
     @include borderrad20;
@@ -31,7 +31,7 @@
     object-fit: cover;
     object-position: 50% 60%;
     width: 100%;
-    height: 180px;
+    height: $height*18;
     border-radius: 20px 20px 0 0;
 }
 
@@ -39,7 +39,7 @@
 
 @mixin btnheader {
     width: 60%;
-    height: 50px;
+    height: $height*5;
     color: $white;
     border-radius: 25px;
     background: linear-gradient(175deg, $secondaire, $primaire);
@@ -56,9 +56,9 @@
 
 @mixin cartefonct {
     width: 100%;
-    height: 70px;
+    height: $height*7;
     background-color: $griscarte;
-    margin-bottom: 25px;
+    margin-bottom: $marg*2.5;
     @include borderrad20;
     justify-content: left;
     margin-left: 0;
@@ -75,9 +75,9 @@
 
 @mixin cartemenu {
     width: 94%;
-    min-height: 70px;
+    min-height: $height*7;
     background-color: $white;
-    margin-bottom: 15px;
+    margin-bottom: $marg*1.5;
     @include borderrad20;
     margin-left: 0;
     cursor: pointer;
@@ -87,12 +87,12 @@
     animation-fill-mode: both;
     transform: scale(0);
     & h3 {
-        margin-top: 12px;
+        margin-top: $marg*1.2;
         margin-bottom: 0;
-        margin-left: 10px;
+        margin-left: $marg;
     }
     & p {
-        margin-top: 5px;
-        margin-left: 10px;
+        margin-top: $marg*0.5;
+        margin-left: $marg;
     }
 }

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Couleur */
+/* Position */
 /* Général */
 /* carte des restaurants d'acceuil */
 /* bouton header */
@@ -11,6 +12,7 @@
   }
   100% {
     transform: scaleY(1);
+    animation-delay: 150ms;
   }
 }
 * {
@@ -95,8 +97,8 @@ a {
   text-align: center;
 }
 .carteheader__titre--pos {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-top: 35px;
 }
 .carteheader__texte {
