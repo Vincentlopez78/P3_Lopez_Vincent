@@ -24,4 +24,8 @@
             flex-direction: row;
         }
     }
+    &__flexend {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
 }

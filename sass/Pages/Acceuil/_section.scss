@@ -58,6 +58,17 @@
             justify-content: left;
         }
     }
+    &__badge {
+        @include nouveau;
+        height: 35px;
+        background-color: $tertiaire;
+        color: darken($tertiaire, 35%);
+        padding: 10px;
+        border-radius: 3px;
+        position: absolute;
+        right: 80px;
+        margin-top: 15px;
+    }
     &__carte {
         @include carteresto;
         @include boxshadow;
@@ -67,6 +78,7 @@
         &--pos {
             height: 70px;
             margin-left: 15px;
+            color: $black;
         }
         &--titre {
             @include titrecarte;
@@ -83,10 +95,14 @@
         }
         &--icone {
         margin-right: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+            &::before {
+                content:"\f004";
+                background-color: $black;
+            }
         }
-    }
     &:hover {
         cursor: pointer;
         }
     }
+}

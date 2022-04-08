@@ -79,8 +79,13 @@
     background-color: $white;
     margin-bottom: 15px;
     @include borderrad20;
-    justify-content: left;
     margin-left: 0;
+    cursor: pointer;
+    overflow: hidden;
+    animation: carteapparition .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
     & h3 {
         margin-top: 12px;
         margin-bottom: 0;

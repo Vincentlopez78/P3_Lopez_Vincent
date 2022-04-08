@@ -15,11 +15,11 @@
         }
     }
 }
-.icone {
-    padding-top: 15px;
+.icone i {
+    position: relative;
+    right: 80px;
     color: $black;
     &:hover {
         cursor: pointer;
-
     }
 }

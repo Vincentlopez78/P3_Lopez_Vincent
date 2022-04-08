@@ -45,6 +45,13 @@
     font-size: 1rem;
 }
 
+@mixin nouveau {
+    font-family: Roboto;
+    src: url(/police/roboto/Roboto-Regular.ttf);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
 @mixin titrecarte {
     font-family: Roboto;
     src: url(/police/roboto/Roboto-Regular.ttf);

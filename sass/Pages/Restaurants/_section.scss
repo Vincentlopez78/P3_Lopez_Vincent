@@ -26,6 +26,10 @@
     }
     &__menu {
         height: 70px;
+        flex: 1;
+        overflow: hidden;
+        text-overflow: clip '...';
+        white-space: nowrap;
         & h3 {
             @include titremenu;
         }
@@ -34,9 +38,37 @@
         }
         &--prix {
             @include titremenu;
-            margin-right: 20px;
             margin-top: 25px;
+            margin-left: 10px;
+            padding-right: 90px;
         }
+    }
+    &__check {
+        background-color: $tertiaire;
+        min-width: 60px;
+        height: 70px;
+        margin: -60px;
+        border-radius: 0 20px 20px 0;
+        transition-duration: .6s;
+    }
+    &:hover &__check {
+        margin-right: 0;
+    }
+    &__anime {
+        height: 25px;
+        width: 25px;
+        background-color: $white;
+        padding-left: 20px;
+        @include borderrad20;
+        transform: rotate(180deg);
+        transition-duration: .6s;
+    }
+    &:hover &__anime {
+        transform: rotate(0);
+    }
+    
+    &__icone {
+        color: $tertiaire;
     }
 }
 .carteheader__btn {
