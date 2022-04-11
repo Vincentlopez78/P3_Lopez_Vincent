@@ -84,6 +84,7 @@
     background-color: $white;
     margin-bottom: $marg*1.5;
     @include borderrad20;
+    @include boxshadow;
     margin-left: 0;
     cursor: pointer;
     overflow: hidden;
