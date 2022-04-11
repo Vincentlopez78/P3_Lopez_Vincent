@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* Couleur */
 /* Position */
+/* Animations */
+/* responsive */
 /* Général */
 /* carte des restaurants d'acceuil */
 /* bouton header */
@@ -14,6 +16,14 @@
     transform: scaleY(1);
   }
 }
+@keyframes return {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -21,6 +31,7 @@
 a {
   display: block;
   text-decoration: none;
+  color: white;
 }
 
 .display {
@@ -61,7 +72,7 @@ a {
 }
 
 .formulaire {
-  width: 80%;
+  width: 90%;
   height: 50px;
   background-color: #eaeaea;
   box-shadow: 0 3px 6px -6px black inset;
@@ -84,7 +95,7 @@ a {
 }
 
 .carteheader {
-  width: 80%;
+  width: 90%;
   height: 300px;
   background-color: #f6f6f6;
 }
@@ -135,9 +146,18 @@ a {
 }
 
 .sectionfonct {
-  width: 70%;
+  width: 80%;
   height: auto;
   margin-bottom: 35px;
+}
+
+@media screen and (min-width: 1230px) {
+  .sectiondesk {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 .cartefonct {
@@ -156,6 +176,12 @@ a {
 }
 .cartefonct:hover i::before {
   color: #9356DC;
+}
+@media screen and (min-width: 600px) {
+  .cartefonct {
+    margin-left: 10px;
+    margin-right: 30px;
+  }
 }
 .cartefonct__titresection {
   font-family: Roboto;
@@ -194,7 +220,7 @@ a {
 }
 
 .sectionresto {
-  width: 80%;
+  width: 90%;
   height: auto;
   background-color: #f6f6f6;
   padding-bottom: 40px;
@@ -208,6 +234,13 @@ a {
   border-radius: 20px;
   text-decoration: none;
   box-shadow: 2px 3px 16px -12px black;
+  position: relative;
+}
+@media screen and (min-width: 1230px) {
+  .carteresto {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 .carteresto img {
   object-fit: cover;
@@ -239,7 +272,7 @@ a {
   padding: 10px;
   border-radius: 3px;
   position: absolute;
-  right: 80px;
+  right: 15px;
   margin-top: 15px;
 }
 .carteresto__carte {
@@ -250,6 +283,12 @@ a {
   border-radius: 20px;
   text-decoration: none;
   box-shadow: 2px 3px 16px -12px black;
+}
+@media screen and (min-width: 1230px) {
+  .carteresto__carte {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 .carteresto__carte img {
   object-fit: cover;
@@ -286,16 +325,27 @@ a {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-.carteresto__carte--icone::before {
-  content: "\f004";
-  background-color: black;
+.carteresto__carte--icone:hover .fa {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
 }
 .carteresto__carte:hover {
   cursor: pointer;
 }
+.carteresto__responsive {
+  width: 100%;
+  align-items: center;
+}
+@media screen and (min-width: 1230px) {
+  .carteresto__responsive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+  }
+}
 
 .footer {
-  width: 80%;
+  width: 90%;
   height: auto;
   color: white;
   background-color: black;
@@ -374,6 +424,14 @@ a {
 .icone i:hover {
   cursor: pointer;
 }
+.icone i:active {
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  background-color: black;
+  opacity: 0.4;
+  animation: return 200ms;
+}
 
 .sectionmenu {
   width: 90%;
@@ -391,6 +449,12 @@ a {
 }
 .sectionmenu i {
   padding-right: 20px;
+}
+@media screen and (min-width: 1230px) {
+  .sectionmenu__responsive {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .carte {
@@ -416,6 +480,33 @@ a {
   margin-top: 5px;
   margin-left: 10px;
 }
+.carte__anime--1 {
+  animation-delay: 150ms;
+}
+.carte__anime--2 {
+  animation-delay: 300ms;
+}
+.carte__anime--3 {
+  animation-delay: 450ms;
+}
+.carte__anime--4 {
+  animation-delay: 600ms;
+}
+.carte__anime--5 {
+  animation-delay: 750ms;
+}
+.carte__anime--6 {
+  animation-delay: 900ms;
+}
+.carte__anime--7 {
+  animation-delay: 1050ms;
+}
+.carte__anime--8 {
+  animation-delay: 1200ms;
+}
+.carte__anime--9 {
+  animation-delay: 1350ms;
+}
 .carte__titre {
   font-family: Roboto;
   src: url(/police/roboto/Roboto-Light.ttf);
@@ -423,38 +514,37 @@ a {
   font-size: 1.2rem;
 }
 .carte__titre p {
-  margin-left: 5%;
+  margin-left: 3.5%;
+  padding-right: 90%;
 }
 .carte__titre p::after {
   content: "";
   width: 45px;
   height: 3px;
   background-color: #99E2D0;
-  position: absolute;
-  left: 3rem;
-  margin-top: 28px;
-}
-.carte__titre--border {
-  border-bottom: 3px solid #99E2D0;
+  float: left;
+  margin-top: 6px;
 }
 .carte__menu {
   height: 70px;
   flex: 1;
   overflow: hidden;
-  text-overflow: clip "...";
-  white-space: nowrap;
 }
 .carte__menu h3 {
   font-family: Roboto;
   src: url(/police/roboto/Roboto-Regular.ttf);
   font-weight: 900;
   font-size: 1.2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .carte__menu p {
   font-family: Roboto;
   src: url(/police/roboto/Roboto-Light.ttf);
   font-weight: 400;
   font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .carte__menu--prix {
   font-family: Roboto;

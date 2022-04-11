@@ -12,38 +12,52 @@
     & i {
         padding-right: $pad*2;
     }
+    &__responsive {
+        @media screen and (min-width:1230px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 }
+
+
 .carte {
     @include cartemenu;
+    &__anime {
+        @for $i from 1 through $carte {
+            &--#{$i} {
+                animation-delay: $delay * $i;
+            }
+        }
+    }
     &__titre {
         @include titremenusection;
         & p {
-        margin-left: 5%;
+        margin-left: 3.5%;
+        padding-right: 90%;
         &::after {
             content: "";
             width: $width*4.5;
             height: $height*0.3;
             background-color: $tertiaire;
-            position: absolute;
-            left: 3rem;
-            margin-top: $marg*2.8;
+            float: left;
+            margin-top: $marg*0.6;
             }
-        }
-        &--border {
-            border-bottom: 3px solid $tertiaire;
         }
     }
     &__menu {
         height: $height*7;
         flex: 1;
         overflow: hidden;
-        text-overflow: clip '...';
-        white-space: nowrap;
         & h3 {
             @include titremenu;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         & p {
             @include textemenu;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         &--prix {
             @include titremenu;

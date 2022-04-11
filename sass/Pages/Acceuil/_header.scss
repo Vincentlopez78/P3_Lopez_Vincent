@@ -3,7 +3,7 @@
     padding-bottom: 5%;
 }
 .formulaire {
-    width: 80%;
+    width: 90%;
     height: $height*5;
     background-color: $grissearch;
     @include boxshadowtop;
@@ -22,7 +22,7 @@
     }
 }
 .carteheader {
-    width: 80%;
+    width: 90%;
     height: $height*30;
     background-color: $griscarte;
     &__titre {

@@ -1,11 +1,25 @@
 .sectionfonct {
-    width: 70%;
+    width: 80%;
     height: auto;
     margin-bottom: $marg*3.5;
+    }
+
+.sectiondesk {
+    @media screen and (min-width:1230px) {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+    }
 }
+
 .cartefonct {
     @include cartefonct;
     @include boxshadow;
+    @media screen and (min-width:600px) {
+        margin-left: $marg;
+        margin-right: $marg*3;
+    }
     &__titresection {
         @include titreh2;
         & p {
@@ -38,14 +52,15 @@
 }
 
 .sectionresto {
-    width: 80%;
+    width: 90%;
     height: auto;
     background-color: $griscarte;
     padding-bottom: $pad*4;
-}
+    }
 .carteresto {
     @include carteresto;
     @include boxshadow;
+    position: relative;
     & img {
         @include carterestoimg;
     }
@@ -66,7 +81,7 @@
         padding: $pad;
         border-radius: 3px;
         position: absolute;
-        right: 80px;
+        right: 15px;
         margin-top: $marg*1.5;
     }
     &__carte {
@@ -96,13 +111,22 @@
         &--icone {
         margin-right: $marg*2;
         margin-bottom: $marg*2;
-            &::before {
-                content:"\f004";
-                background-color: $black;
+            &:hover .fa {
+                background: linear-gradient(175deg, $secondaire, $primaire);
+                }
             }
-        }
     &:hover {
         cursor: pointer;
+        }
+    }
+    &__responsive {
+        width: 100%;
+        align-items: center;
+        @media screen and (min-width:1230px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 90%;
         }
     }
 }
