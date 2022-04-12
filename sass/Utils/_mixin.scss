@@ -1,18 +1,18 @@
 /* Général */
 
 @mixin borderrad20 {
-    border-radius: 20px;
+    border-radius: $size*2;
 }
 
 @mixin margbot20 {
-    margin-bottom: $marg*2;
+    margin-bottom: $size*2;
 }
 
 @mixin boxshadow {
-    box-shadow: 2px 3px 16px -12px $black;
+    box-shadow: $size*0.2 $size*0.3 $size*1.6 $size*-1.2 $black;
 }
 @mixin boxshadowtop {
-    box-shadow: 0 3px 6px -6px $black inset;
+    box-shadow: 0 $size*0.3 $size*0.6 $size*-0.6 $black inset;
 } 
 
 
@@ -21,34 +21,34 @@
 
 @mixin carteresto {
     width: 90%;
-    height: $height*25;
+    height: $size*25;
     background-color: $white;
     @include margbot20;
     @include borderrad20;
     text-decoration: none;
     @media screen and (min-width:1230px) {
-        margin-left: $marg;
-        margin-right: $marg;
+        margin-left: $size;
+        margin-right: $size;
     }
 }
 @mixin carterestoimg {
     object-fit: cover;
     object-position: 50% 60%;
     width: 100%;
-    height: $height*18;
-    border-radius: 20px 20px 0 0;
+    height: $size*18;
+    border-radius: $size*2.0 $size*2.0 0 0;
 }
 
 /* bouton header */
 
 @mixin btnheader {
     width: 60%;
-    height: $height*5;
+    height: $size*5;
     color: $white;
-    border-radius: 25px;
+    border-radius: $size*2.5;
     background: linear-gradient(175deg, $secondaire, $primaire);
     border: none;
-    box-shadow: 0 4px 16px -8px $black;
+    box-shadow: 0 $size*0.4 $size*1.6 $size*-0.8 $black;
     &:hover {
         cursor: pointer;
         box-shadow: none;
@@ -60,9 +60,9 @@
 
 @mixin cartefonct {
     width: 100%;
-    height: $height*7;
+    height: $size*7;
     background-color: $griscarte;
-    margin-bottom: $marg*2.5;
+    margin-bottom: $size*2.5;
     @include borderrad20;
     justify-content: left;
     margin-left: 0;
@@ -80,9 +80,9 @@
 
 @mixin cartemenu {
     width: 94%;
-    min-height: $height*7;
+    min-height: $size*7;
     background-color: $white;
-    margin-bottom: $marg*1.5;
+    margin-bottom: $size*1.5;
     @include borderrad20;
     @include boxshadow;
     margin-left: 0;
@@ -93,12 +93,22 @@
     animation-fill-mode: both;
     transform: scale(0);
     & h3 {
-        margin-top: $marg*1.2;
+        margin-top: $size*1.2;
         margin-bottom: 0;
-        margin-left: $marg;
+        margin-left: $size;
     }
     & p {
-        margin-top: $marg*0.5;
-        margin-left: $marg;
+        margin-top: $size*0.5;
+        margin-left: $size;
     }
+}
+
+@mixin heart {
+    opacity: 1;
+    background: linear-gradient(0deg, $secondaire, $primaire);
+    background-position: bottom;
+    animation: heart .3s ease-out;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
 }

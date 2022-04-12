@@ -1,7 +1,7 @@
 .sectionfonct {
     width: 80%;
     height: auto;
-    margin-bottom: $marg*3.5;
+    margin-bottom: $size*3.5;
     }
 
 .sectiondesk {
@@ -17,36 +17,36 @@
     @include cartefonct;
     @include boxshadow;
     @media screen and (min-width:600px) {
-        margin-left: $marg;
-        margin-right: $marg*3;
+        margin-left: $size;
+        margin-right: $size*3;
     }
     &__titresection {
         @include titreh2;
         & p {
-            margin-left: -10px;
-            margin-top: $marg*2;
-            padding-top: $pad*2;
+            margin-left: $size*-1;
+            margin-top: $size*2;
+            padding-top: $size*2;
         }
     }
     &__titrecarte {
         @include titrecarte;
     }
     &__icone {
-        margin-right: $marg*2.5;
-        margin-left: $marg*2.5;
+        margin-right: $size*2.5;
+        margin-left: $size*2.5;
         color: grey;
     }
     &__number {
-        width: $width*2.5;
-        height: $height*2.5;
+        width: $size*2.5;
+        height: $size*2.5;
         background-color: $primaire;
         color: $white;
-        margin-left: -10px;
+        margin-left: $size*-1;
         @include borderrad20;
         align-items: center;
         &--icone {
-            padding-left: $pad*0.8;
-            margin-top: $marg*0.4;
+            padding-left: $size*0.8;
+            margin-top: $size*0.4;
         }
     }
 }
@@ -55,7 +55,7 @@
     width: 90%;
     height: auto;
     background-color: $griscarte;
-    padding-bottom: $pad*4;
+    padding-bottom: $size*4;
     }
 .carteresto {
     @include carteresto;
@@ -67,7 +67,7 @@
     &__titresection {
         @include titreh2;
         & p {
-            padding-top: $pad*5;
+            padding-top: $size*5;
             margin-top: 0;
             margin-left: 5%;
             justify-content: left;
@@ -75,14 +75,14 @@
     }
     &__badge {
         @include nouveau;
-        height: $height*3.5;
+        height: $size*3.5;
         background-color: $tertiaire;
         color: darken($tertiaire, 35%);
-        padding: $pad;
-        border-radius: 3px;
+        padding: $size;
+        border-radius: $size*0.3;
         position: absolute;
-        right: 15px;
-        margin-top: $marg*1.5;
+        right: $size*1.5;
+        margin-top: $size*1.5;
     }
     &__carte {
         @include carteresto;
@@ -91,8 +91,8 @@
             @include carterestoimg;
         }
         &--pos {
-            height: $height*7;
-            margin-left: $marg*1.5;
+            height: $size*7;
+            margin-left: $size*1.5;
             color: $black;
         }
         &--titre {
@@ -100,7 +100,7 @@
         }
         & h3 {
             margin-bottom: 0;
-            margin-top: $marg;
+            margin-top: $size;
         }
         &--texte {
             @include textecarte;
@@ -108,13 +108,17 @@
         & p {
             margin-top: 0;
         }
-        &--icone {
-        margin-right: $marg*2;
-        margin-bottom: $marg*2;
-            &:hover .fa {
-                background: linear-gradient(175deg, $secondaire, $primaire);
-                }
+        
+        &--iconepos {
+        margin-right: $size*2;
+        margin-bottom: $size*2;
+        }
+        & .fa-heart {
+            color: $black;
+            &:hover::before {
+            @include heart
             }
+        }
     &:hover {
         cursor: pointer;
         }

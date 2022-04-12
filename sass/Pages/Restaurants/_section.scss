@@ -1,25 +1,40 @@
 .sectionmenu {
+    position: relative;
     width: 90%;
     height: auto;
     background-color: $griscarte;
-    border-radius: 35px 35px 0 0;
-    margin-top: $marg*-3.5;
-    padding-top: $pad*1.5;
-    padding-bottom: $pad*6;
+    border-radius: $size*3.5 $size*3.5 0 0;
+    margin-top: $size*-3.5;
+    padding-top: $size*1.5;
+    padding-bottom: $size*6;
     & h1 {
         @include shrikmenu;
-    }
+        }
     & i {
-        padding-right: $pad*2;
+        padding-right: $size*2;
+        cursor: pointer;
+        &:hover::before {
+            @include heart
+        }
+    }
+    &__titre--responsive {
+
+        @media screen and (min-width:650px) {
+            justify-content: center;
+            align-items: center;
+            & h1 {
+            margin-right: $size*4;
+            }
+        }
     }
     &__responsive {
         @media screen and (min-width:1230px) {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            }
         }
     }
-}
 
 
 .carte {
@@ -38,40 +53,42 @@
         padding-right: 90%;
         &::after {
             content: "";
-            width: $width*4.5;
-            height: $height*0.3;
+            width: $size*4.5;
+            height: $size*0.3;
             background-color: $tertiaire;
             float: left;
-            margin-top: $marg*0.6;
+            margin-top: $size*0.6;
             }
         }
     }
     &__menu {
-        height: $height*7;
+        height: $size*7;
         flex: 1;
         overflow: hidden;
         & h3 {
             @include titremenu;
             text-overflow: ellipsis;
             white-space: nowrap;
+            overflow: hidden;
         }
         & p {
             @include textemenu;
             text-overflow: ellipsis;
             white-space: nowrap;
+            overflow: hidden
         }
         &--prix {
             @include titremenu;
-            margin-top: $marg*2.5;
-            margin-left: $marg;
-            padding-right: $pad*9;
+            margin-top: $size*2.5;
+            margin-left: $size;
+            padding-right: $size*9;
         }
     }
         &__check {
         background-color: $tertiaire;
-        min-width: $width*6;
-        height: $height*7;
-        margin: $marg*-6;
+        min-width: $size*6;
+        height: $size*7;
+        margin: $size*-6;
         transition-duration: .6s;
     }
     
@@ -80,10 +97,10 @@
     }
     
     &__anime {
-        height: $height*2.5;
-        width: $width*2.5;
+        height: $size*2.5;
+        width: $size*2.5;
         background-color: $white;
-        padding-left: $pad*2;
+        padding-left: $size*2;
         @include borderrad20;
         transform: rotate(-360deg);
         transition-duration: .6s;
@@ -96,10 +113,24 @@
     &__icone {
         color: $tertiaire;
     }
+    &__responsive {
+        @media screen and (min-width:1230px) {
+            width: $size*35;
+            & .carte__menu--prix {
+                padding-right: $size*-5;
+            }
+            & .carte__check {
+                width: $size*8;
+            }
+            & .carte__anime {
+                margin-right: $size*2;
+            }
+        }
+    }
 }
 
 .carteheader__btn {
-    margin-top: $marg*3;
+    margin-top: $size*3;
 }
 
 a {
