@@ -46,14 +46,13 @@
     height: $size*5;
     color: $white;
     border-radius: $size*2.5;
-    background: linear-gradient(175deg, $secondaire, $primaire);
+    background: linear-gradient(175deg, $secondaire, $primaire,);
     border: none;
     box-shadow: 0 $size*0.4 $size*1.6 $size*-0.8 $black;
     &:hover {
         cursor: pointer;
         box-shadow: none;
     }
-
 }
 
 /* carte Fonctionnement */
