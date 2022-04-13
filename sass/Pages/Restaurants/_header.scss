@@ -1,25 +1,52 @@
-#logo {
-    width: 80%;
-    padding-bottom: 5%;
+#entete {
+    @include shriktete;
+    margin: 0;
 }
 .sectionheader {
+    position: relative;
     width: 90%;
     height: auto;
     & .carteheader {
         width: 100%;
-        height: 250px;
+        height: $size*25;
         & img {
             width: 100%;
-            height: 250px;
+            height: $size*25;
             object-fit: cover;
         }
     }
 }
-.icone {
-    padding-top: 15px;
+.icone i {
+    position: absolute;
+    left: $size*2;
+    top: $size*1.2;
     color: $black;
     &:hover {
         cursor: pointer;
+    }
+    &:active {
+        height: $size*2.5;
+        width: $size*2.5;
+        border-radius: $size*1.5;
+        animation: return 200ms;
+    }
+    @media screen and (min-width:650px) {
+        display: none;
+    }
+}
 
+.btn {
+    @include btnheader;
+    @include textebtn;
+    width: $size*10;
+    height: $size*3;
+    position: absolute;
+    left: $size*2;
+    top: $size*0.2;
+    margin-bottom: $size;
+    &__non {
+        @media screen and (max-width:650px) {
+        display: none;
+        }
     }
 }

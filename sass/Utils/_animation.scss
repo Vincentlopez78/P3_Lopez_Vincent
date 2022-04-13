@@ -1,0 +1,30 @@
+@keyframes carteapparition {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+        
+    }
+}
+
+@keyframes return {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX($size*-1.5);
+    }
+}
+
+@keyframes heart {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

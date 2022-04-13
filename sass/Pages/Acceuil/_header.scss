@@ -3,12 +3,12 @@
     padding-bottom: 5%;
 }
 .formulaire {
-    width: 80%;
-    height: 50px;
+    width: 90%;
+    height: $size*5;
     background-color: $grissearch;
     @include boxshadowtop;
     &__position {
-        margin-left: 50px;
+        margin-left: $size*5;
     }
     &__searchbar {
         background-color: $grissearch;
@@ -16,29 +16,29 @@
         outline-style: none;
         @include textesearch;
         &--pos {
-            margin-top: 13px;
-            padding-left: 15px;
+            margin-top: $size*1.3;
+            padding-left: $size*1.5;
         }
     }
 }
 .carteheader {
-    width: 80%;
-    height: 300px;
+    width: 90%;
+    height: $size*30;
     background-color: $griscarte;
     &__titre {
         @include titreh1;
         text-align: center;
         &--pos {
-            padding-left: 10%;
-            padding-right: 10%;
-            margin-top: 35px
+            padding-left: $size*1.5;
+            padding-right: $size*1.5;
+            margin-top: $size*3.5;
         }
     }
     &__texte {
         @include texteheader;
         text-align: center;
         &--pos {
-            padding: 0 30px 10px 30px;
+            padding: 0 $size*3 $size $size*3;
         }
     }
     & p {
@@ -48,7 +48,7 @@
         @include btnheader;
         @include textebtn;
         &--pos {
-            margin-bottom: 30px;
+            margin-bottom: $size*3;
         }
     }
 }
