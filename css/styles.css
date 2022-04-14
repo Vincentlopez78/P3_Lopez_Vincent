@@ -113,14 +113,13 @@ a {
   z-index: 99999;
   background-color: white;
   animation: load 3s forwards;
-  overflow: hidden;
 }
 .container p {
   font-family: shrikhand;
   src: url(/police/shrikhand/Shrikhand-Regular.ttf);
   font-size: 1.8rem;
   position: relative;
-  line-height: 800px;
+  line-height: 600px;
   font-size: 3rem;
   background: linear-gradient(20deg, black, #99E2D0, #FF79DA, #9356DC);
   background-size: 300%;
