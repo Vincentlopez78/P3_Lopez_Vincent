@@ -2,6 +2,7 @@
     width: 80%;
     height: auto;
     margin-bottom: $size*3.5;
+    margin-top: $size*5;
     }
 
 .sectiondesk {
@@ -10,23 +11,22 @@
         justify-content: space-around;
         flex-direction: row;
         width: 100%;
+        }
     }
-}
 
 .cartefonct {
     @include cartefonct;
     @include boxshadow;
+    &:hover {
+        cursor: pointer;
+    }
     @media screen and (min-width:600px) {
         margin-left: $size;
         margin-right: $size*3;
     }
     &__titresection {
-        @include titreh2;
-        & p {
-            margin-left: $size*-1;
-            margin-top: $size*2;
-            padding-top: $size*2;
-        }
+        @include titre--acc;
+        margin-top: $size*-2;
     }
     &__titrecarte {
         @include titrecarte;
@@ -65,8 +65,8 @@
         @include carterestoimg;
     }
     &__titresection {
-        @include titreh2;
-        & p {
+        @include titre--acc;
+        & h1 {
             padding-top: $size*5;
             margin-top: 0;
             margin-left: 5%;
@@ -116,11 +116,11 @@
         & .fa-heart {
             color: $black;
             &:hover::before {
-            @include heart
+            @include heart;
             }
         }
-    &:hover {
-        cursor: pointer;
+        &:hover {
+            cursor: pointer;
         }
     }
     &__responsive {

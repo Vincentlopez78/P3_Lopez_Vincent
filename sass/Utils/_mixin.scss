@@ -52,6 +52,7 @@
     &:hover {
         cursor: pointer;
         box-shadow: none;
+        opacity: .85;
     }
 }
 
@@ -110,4 +111,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: bold;
+    &:hover {
+        cursor: pointer;
+    }
 }

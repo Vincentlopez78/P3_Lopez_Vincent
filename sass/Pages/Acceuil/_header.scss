@@ -10,6 +10,7 @@
     z-index: 99999;
     background-color: $white;
     animation: load 3s forwards;
+    overflow: hidden;
     & p {
         @include shriktete;
         position: relative;

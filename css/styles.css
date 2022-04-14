@@ -17,6 +17,7 @@
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes degrade {
@@ -112,6 +113,7 @@ a {
   z-index: 99999;
   background-color: white;
   animation: load 3s forwards;
+  overflow: hidden;
 }
 .container p {
   font-family: shrikhand;
@@ -206,6 +208,7 @@ a {
 .carteheader__btn:hover {
   cursor: pointer;
   box-shadow: none;
+  opacity: 0.85;
 }
 .carteheader__btn--pos {
   margin-bottom: 30px;
@@ -215,6 +218,7 @@ a {
   width: 80%;
   height: auto;
   margin-bottom: 35px;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 1230px) {
@@ -243,6 +247,9 @@ a {
 .cartefonct:hover i::before {
   color: #9356DC;
 }
+.cartefonct:hover {
+  cursor: pointer;
+}
 @media screen and (min-width: 600px) {
   .cartefonct {
     margin-left: 10px;
@@ -253,12 +260,8 @@ a {
   font-family: Roboto;
   src: url(/police/roboto/Roboto-Bold.ttf);
   font-weight: 900;
-  font-size: 1.4rem;
-}
-.cartefonct__titresection p {
-  margin-left: -10px;
-  margin-top: 20px;
-  padding-top: 20px;
+  font-size: 1rem;
+  margin-top: -20px;
 }
 .cartefonct__titrecarte {
   font-family: Roboto;
@@ -319,9 +322,9 @@ a {
   font-family: Roboto;
   src: url(/police/roboto/Roboto-Bold.ttf);
   font-weight: 900;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
-.carteresto__titresection p {
+.carteresto__titresection h1 {
   padding-top: 50px;
   margin-top: 0;
   margin-left: 5%;
@@ -402,6 +405,9 @@ a {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: bold;
+}
+.carteresto__carte .fa-heart:hover::before:hover {
+  cursor: pointer;
 }
 .carteresto__carte:hover {
   cursor: pointer;
@@ -531,10 +537,13 @@ a {
   left: 20px;
   top: 2px;
   margin-bottom: 10px;
+  padding-left: 22px;
+  padding-top: 5px;
 }
 .btn:hover {
   cursor: pointer;
   box-shadow: none;
+  opacity: 0.85;
 }
 @media screen and (max-width: 650px) {
   .btn__non {
@@ -569,6 +578,9 @@ a {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: bold;
+}
+.sectionmenu i:hover::before:hover {
+  cursor: pointer;
 }
 @media screen and (min-width: 650px) {
   .sectionmenu__titre--responsive {
@@ -730,10 +742,6 @@ a {
 
 .carteheader__btn {
   margin-top: 30px;
-}
-
-a {
-  display: block;
 }
 
 .footerpage {
