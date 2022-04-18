@@ -2,6 +2,38 @@
     width: 95%;
     padding-bottom: 5%;
 }
+
+.container {
+    position: absolute;
+    height: $size*155;
+    width: 100%;
+    z-index: 99999;
+    background-color: $white;
+    animation: load 3s forwards;
+    & p {
+        @include shriktete;
+        position: relative;
+        line-height: $size*60;
+        font-size: $fontsize*3;
+        background: linear-gradient(20deg, $black, $tertiaire, $secondaire, $primaire);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: degrade 3s linear infinite;
+    }
+}
+    .loader {
+        width: $size*5;
+        height: $size*5;
+        display: inline-block;
+        &__border {
+            border-radius: $size*5;
+            border: $size*0.5 solid rgba(255,255,255,0.4);
+        }
+    }
+
+
+
 .formulaire {
     width: 90%;
     height: $size*5;

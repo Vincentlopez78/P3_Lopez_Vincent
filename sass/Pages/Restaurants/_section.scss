@@ -18,7 +18,6 @@
         }
     }
     &__titre--responsive {
-
         @media screen and (min-width:650px) {
             justify-content: center;
             align-items: center;
@@ -75,7 +74,7 @@
             @include textemenu;
             text-overflow: ellipsis;
             white-space: nowrap;
-            overflow: hidden
+            overflow: hidden;
         }
         &--prix {
             @include titremenu;
@@ -92,7 +91,7 @@
         transition-duration: .6s;
     }
     
-    &:hover &__check {
+    &:active &__check {
         margin-right: 0;
     }
     
@@ -106,7 +105,7 @@
         transition-duration: .6s;
     }
     
-    &:hover &__anime {
+    &:active &__anime {
         transform: rotate(0);
     }
     
@@ -131,8 +130,4 @@
 
 .carteheader__btn {
     margin-top: $size*3;
-}
-
-a {
-    display: block;
 }

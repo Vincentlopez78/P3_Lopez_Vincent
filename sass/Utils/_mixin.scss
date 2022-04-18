@@ -46,14 +46,15 @@
     height: $size*5;
     color: $white;
     border-radius: $size*2.5;
-    background: linear-gradient(175deg, $secondaire, $primaire);
+    background: linear-gradient(175deg, $secondaire, $primaire,);
     border: none;
     box-shadow: 0 $size*0.4 $size*1.6 $size*-0.8 $black;
     &:hover {
         cursor: pointer;
         box-shadow: none;
+        opacity: .85;
+        box-shadow: 0 $size*0.4 $size*4 $size*0.2 $black;
     }
-
 }
 
 /* carte Fonctionnement */
@@ -111,4 +112,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: bold;
+    &:hover {
+        cursor: pointer;
+    }
 }

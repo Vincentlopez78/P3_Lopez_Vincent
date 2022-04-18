@@ -45,10 +45,10 @@
     font-size: $fontsize*1.4;
 }
 
-@mixin titreh2 {
+@mixin titre--acc {
     @include roboto__bold;
     font-weight: $bold*9;
-    font-size: $fontsize*1.4;
+    font-size: $fontsize;
 }
 
 @mixin textesearch {
