@@ -115,7 +115,7 @@
         }
         & .fa-heart {
             color: $black;
-            &:active::before {
+            &:hover::before {
             @include heart;
             }
         }

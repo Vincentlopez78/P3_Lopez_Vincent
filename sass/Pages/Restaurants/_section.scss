@@ -91,7 +91,7 @@
         transition-duration: .6s;
     }
     
-    &:active &__check {
+    &:hover &__check {
         margin-right: 0;
     }
     
@@ -105,7 +105,7 @@
         transition-duration: .6s;
     }
     
-    &:active &__anime {
+    &:hover &__anime {
         transform: rotate(0);
     }
     
